@@ -1,5 +1,5 @@
 package BibliotecaDigital;
 
 public interface Clonable {
-    Clonable clone();
+    Libro clonar() throws CloneNotSupportedException;
 }

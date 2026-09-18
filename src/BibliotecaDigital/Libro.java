@@ -7,7 +7,6 @@ public class Libro implements Clonable {
     private String marcadores;
     private String resumen;
 
-
     public Libro(String titulo, String contenido, String anotaciones, String marcadores, String resumen) {
         this.titulo = titulo;
         this.contenido = contenido;
@@ -16,35 +15,17 @@ public class Libro implements Clonable {
         this.resumen = resumen;
     }
 
-
-    public Libro(Libro libro) {
-            this.titulo = libro.titulo;
-            this.contenido = libro.contenido;
-            this.anotaciones = libro.anotaciones;
-            this.marcadores = libro.marcadores;
-            this.resumen = libro.resumen;
-    }
-
     @Override
-    public Clonable clone() {
-        return new Libro(this);
+    public Libro clonar() throws CloneNotSupportedException {
+        return new Libro(this.titulo, this.contenido, this.anotaciones, this.marcadores, this.resumen);
     }
-
 
     public void agregarAnotacion(String anotacion) {
-        if (this.anotaciones == null || this.anotaciones.isEmpty()) {
-            this.anotaciones = anotacion;
-        } else {
-            this.anotaciones += " | " + anotacion;
-        }
+        this.anotaciones = anotacion;
     }
 
     public void agregarMarcador(String marcador) {
-        if (this.marcadores == null || this.marcadores.isEmpty()) {
-            this.marcadores = marcador;
-        } else {
-            this.marcadores += " | " + marcador;
-        }
+        this.marcadores = marcador;
     }
 
     public void agregarResumen(String resumen) {
@@ -89,16 +70,5 @@ public class Libro implements Clonable {
 
     public void setResumen(String resumen) {
         this.resumen = resumen;
-    }
-
-    @Override
-    public String toString() {
-        return "Libro{" +
-                "titulo='" + titulo + '\'' +
-                ", contenido='" + contenido + '\'' +
-                ", anotaciones='" + anotaciones + '\'' +
-                ", marcadores='" + marcadores + '\'' +
-                ", resumen='" + resumen + '\'' +
-                '}';
     }
 }

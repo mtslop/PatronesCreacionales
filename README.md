@@ -16,7 +16,8 @@ A continuación se presentan los diagramas correspondientes al proyecto.
 ## Diagrama 2
 
 
-<img width="1285" height="754" alt="WhatsApp Image 2026-09-17 at 5 13 20 PM" src="https://github.com/user-attachments/assets/0952ad38-651f-45da-9a6d-4f3426d9e3ba" />
+<img width="1285" height="754" alt="image" src="https://github.com/user-attachments/assets/a4dc5c58-e008-44c6-8832-a09e2153f5e2" />
+
 
 
 ---
@@ -25,7 +26,8 @@ A continuación se presentan los diagramas correspondientes al proyecto.
 
 
 
-<img width="1130" height="778" alt="WhatsApp Image 2026-09-17 at 9 56 15 PM" src="https://github.com/user-attachments/assets/83bd6685-ed48-4017-adf6-de02f668022b" />
+<img width="1511" height="1041" alt="image" src="https://github.com/user-attachments/assets/5b8083a1-a1ad-49b8-9962-503ed9635ee9" />
+
 
 
 ---

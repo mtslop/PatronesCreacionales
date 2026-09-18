@@ -7,14 +7,11 @@ public class CopiaPersonalizada {
         this.copiable = copiable;
     }
 
-    public Clonable personalizarCopia(String anotacion, String marcador, String resumen) {
-        Clonable copia = this.copiable.clone();
-        if (copia instanceof Libro) {
-            Libro libroCopia = (Libro) copia;
-            if (anotacion != null) libroCopia.agregarAnotacion(anotacion);
-            if (marcador != null) libroCopia.agregarMarcador(marcador);
-            if (resumen != null) libroCopia.agregarResumen(resumen);
-        }
+    public Libro personalizarCopia(String anotacion, String marcador, String resumen) throws CloneNotSupportedException {
+        Libro copia = copiable.clonar();
+        if (anotacion != null) copia.agregarAnotacion(anotacion);
+        if (marcador != null) copia.agregarMarcador(marcador);
+        if (resumen != null) copia.agregarResumen(resumen);
         return copia;
     }
 

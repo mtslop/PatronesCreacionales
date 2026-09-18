@@ -1,6 +1,5 @@
 package BibliotecaDigital;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,16 +18,11 @@ public class BibliotecaDigital {
         this.listaLibros.add(libro);
     }
 
-    public Libro obtenerCopiaPersonalizada(String titulo, String anotacion, String marcador, String resumen) {
-        for (Libro libro : listaLibros) {
-            if (libro.getTitulo().equalsIgnoreCase(titulo)) {
-                CopiaPersonalizada gestorCopia = new CopiaPersonalizada(libro);
-                return (Libro) gestorCopia.personalizarCopia(anotacion, marcador, resumen);
-            }
-        }
-        return null;
+    public Libro obtenerCopiaPersonalizada(Libro libroOriginal) throws CloneNotSupportedException {
+        Libro copia = libroOriginal.clonar();
+        this.listaLibros.add(copia);
+        return copia;
     }
-
 
     public String getNombre() {
         return nombre;

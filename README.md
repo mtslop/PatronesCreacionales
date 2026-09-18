@@ -43,7 +43,8 @@ A continuación se presentan los diagramas correspondientes al proyecto.
 
 
 
-<img width="1331" height="858" alt="WhatsApp Image 2026-09-17 at 10 21 54 PM" src="https://github.com/user-attachments/assets/12e89f49-6092-4c1d-907c-b286950163a1" />
+<img width="975" height="624" alt="image" src="https://github.com/user-attachments/assets/f7d9e55c-47a8-4681-a8f2-a510584d6e39" />
+
 
 
 ---
